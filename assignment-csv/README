@@ -1,0 +1,13 @@
+# Assignment CSV Medical Records
+
+Hello,
+
+for this project I used Java 21, Spring boot, Gradle and H2 as my in memory DB.
+
+note: since I was short on time I focused more on the Java part and let the DB to be automatically created by the app.
+
+I added a sample Dockerfile that I used in other projects but I couldn't test it, so I hope you can run it on your machine.
+To run the app you can use the command "./gradlew bootRun" and the application will serve in the port 8089.
+
+Thanks
+

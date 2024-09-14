@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.assignment_csv.controller.MedicalRecordControllerIT" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-09-14T15:48:58" hostname="Pablos-Air.Home" time="0.564">
+  <properties/>
+  <testcase name="shouldReturnMedicalRecordNotFound()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.41"/>
+  <testcase name="shouldReturnAllMedicalRecords()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.051"/>
+  <testcase name="shouldExportToCsv()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.024"/>
+  <testcase name="shouldDeleteAll()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.023"/>
+  <testcase name="shouldReturnNoMedicalRecordsFiltered()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.014"/>
+  <testcase name="shouldReturnAllMedicalRecordsFiltered()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.013"/>
+  <testcase name="shouldImportFile()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.011"/>
+  <testcase name="shouldReturnMedicalRecordByCode()" classname="com.assignment_csv.controller.MedicalRecordControllerIT" time="0.013"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+16:48:57.124 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.assignment_csv.controller.MedicalRecordControllerIT]: MedicalRecordControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:48:57.173 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.assignment_csv.AssignmentCsvApplication for test class com.assignment_csv.controller.MedicalRecordControllerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-14T16:48:57.323+01:00  INFO 53710 --- [    Test worker] c.a.c.MedicalRecordControllerIT          : Starting MedicalRecordControllerIT using Java 21.0.4 with PID 53710 (started by pablokleim in /Users/pablokleim/Documents/projetos/assignment-csv)
+2024-09-14T16:48:57.324+01:00  INFO 53710 --- [    Test worker] c.a.c.MedicalRecordControllerIT          : The following 1 profile is active: "test"
+2024-09-14T16:48:57.561+01:00  INFO 53710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-14T16:48:57.581+01:00  INFO 53710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-09-14T16:48:57.733+01:00  INFO 53710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-14T16:48:57.807+01:00  INFO 53710 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ba912802-4ef7-40e8-b692-c9d891ee998e user=SA
+2024-09-14T16:48:57.808+01:00  INFO 53710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-14T16:48:57.831+01:00  INFO 53710 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-14T16:48:57.855+01:00  INFO 53710 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-14T16:48:57.868+01:00  INFO 53710 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-14T16:48:57.979+01:00  INFO 53710 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-14T16:48:58.321+01:00  INFO 53710 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-14T16:48:58.332+01:00  INFO 53710 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-14T16:48:58.422+01:00  INFO 53710 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-14T16:48:58.743+01:00  WARN 53710 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-14T16:48:58.899+01:00  INFO 53710 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14T16:48:58.900+01:00  INFO 53710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14T16:48:58.900+01:00  INFO 53710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-09-14T16:48:58.920+01:00  INFO 53710 --- [    Test worker] c.a.c.MedicalRecordControllerIT          : Started MedicalRecordControllerIT in 1.683 seconds (process running for 2.178)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/pablokleim/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
